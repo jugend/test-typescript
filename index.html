@@ -6,7 +6,11 @@
     <title>Index</title>
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script charset="utf-8">
-      SystemJS.conifg({
+      SystemJS.config({
+        map: {
+          // Match the import statement
+          'jQuery': 'node_modules/jquery/dist/jquery.min.js'
+        },
         baseURL: 'dist/',
         defaultExtension: 'js'
       })
@@ -19,5 +23,7 @@
     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
     vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
     no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+    <div id="app">Change with JQuery</div>
   </body>
 </html>
